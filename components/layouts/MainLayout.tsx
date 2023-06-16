@@ -3,8 +3,9 @@ import { Navbar } from '../Navbar';
 
 
 import styles from './MainLayout.module.css';
+import { FC, ReactNode } from 'react';
 
-export const MainLayout = ({ children }) => {
+export const MainLayout: FC<{ children: ReactNode }> = ({ children }) => {
     return (
         <div className={styles.container}>
           
